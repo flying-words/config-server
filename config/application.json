@@ -1,5 +1,7 @@
 {
     "hello": "world",
-    "super": "mario"
+    "super": "mario",
+    "test": "ENV:TEST_ENV",
+    "redis": ["ENV:REDIS_1", "ENV:REDIS_2"]
 }
 

@@ -4,10 +4,12 @@ var express = require('express');
 var denodeify = require('denodeify');
 var readFile = denodeify(fs.readFile);
 
+var configComplete = require('./configComplete');
+
 var app = express();
 
 function validateApiKey(req, res, next) {
-    if (req.get('private-api-key') !== process.env.PRIVATE_API_KEY) {
+    if (req.get('X-CLIENT-TOKEN') !== process.env.CLIENT_TOKEN) {
         return res.status(401).json({
             errorId: 'unauthorized',
             errorMsg: 'invalid api key'
@@ -29,7 +31,7 @@ app.get('/config/:env',
     ]).then(files => {
         var [base, envConfig] = files.map(content => JSON.parse(content));
         var result = Object.assign({}, base, envConfig);
-        res.json(result);
+        res.json(configComplete(result));
     }).catch(e => {
         console.error(e);
         res.status(500).json({
@@ -38,7 +40,6 @@ app.get('/config/:env',
         });
     });
 });
-
 
 var port = 9000;
 app.listen(port, () => {
