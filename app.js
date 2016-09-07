@@ -1,12 +1,14 @@
 var fs = require('fs');
 var path = require('path');
 var express = require('express');
+var cors = require('cors');
 var denodeify = require('denodeify');
 var readFile = denodeify(fs.readFile);
 
 var configComplete = require('./configComplete');
 
 var app = express();
+app.use(cors());
 
 function validateApiKey(req, res, next) {
     if (req.get('X-CLIENT-TOKEN') !== process.env.CLIENT_TOKEN) {

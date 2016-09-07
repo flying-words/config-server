@@ -8,6 +8,7 @@
   },
   "author": "yangchen@limijiaoyin.com",
   "dependencies": {
+    "cors": "^2.8.0",
     "denodeify": "^1.2.1",
     "express": "^4.14.0",
     "traverse": "^0.6.6"
