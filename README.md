@@ -18,7 +18,7 @@ __为了安全起见，请使用 https 。__
 * ./config/{environment}.json 文件提供了针对不同环境的配置
 * 服务提供 `GET /config/:environment` 接口：
   * 接受请求是，会根据 `environment` 参数读取 config 当中对应的 json 文件以及 application.json 文件
-  * 并对两个 json 文件的内容进行合并，合并方式：`extend({}, application, environment)` ，也就是说参数对应的 json 文件会覆盖 application.json 文件当中项目的配置
+  * 并对两个 json 文件的内容进行合并（`merge(application, environment)`），[merge 的规则](https://github.com/KyleAMathews/deepmerge#mergex-y)。，也就是说参数对应的 json 文件会覆盖 application.json 文件当中相应的配置。
 
 
 
