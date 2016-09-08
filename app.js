@@ -6,6 +6,7 @@ var denodeify = require('denodeify');
 var readFile = denodeify(fs.readFile);
 
 var configComplete = require('./configComplete');
+var mergeConfig = require('./mergeConfig');
 
 var app = express();
 app.use(cors());
@@ -32,7 +33,7 @@ app.get('/config/:env',
         readFile(filename, {encoding: 'utf-8'})
     ]).then(files => {
         var [base, envConfig] = files.map(content => JSON.parse(content));
-        var result = Object.assign({}, base, envConfig);
+        var result = mergeConfig(base, envConfig);
         res.json(configComplete(result));
     }).catch(e => {
         console.error(e);
