@@ -12,6 +12,7 @@
     "deepmerge": "^0.2.10",
     "denodeify": "^1.2.1",
     "express": "^4.14.0",
+    "js-yaml": "^3.6.1",
     "traverse": "^0.6.6"
   },
   "devDependencies": {

@@ -4,26 +4,28 @@ var complete = require('../configComplete');
 describe("configComplete", () => {
     it("should replace value of the env property", () => {
         var origin = {
-            "privateApiKey": "ENV:PRIVATE_API_KEY"
+            "privateApiKey": "${PRIVATE_API_KEY}"
         };
 
-        process.env.PRIVATE_API_KEY = "hello";
-        var result = complete(origin);
+        var result = complete(origin, {
+            PRIVATE_API_KEY: "hello"
+        });
         assert.deepEqual(result, {
             "privateApiKey": "hello"
         });
     });
 
-    it("should replace env variable in array", () => {
+    it("should be able to replace env variable in array", () => {
         var origin = {
             redis: {
-                hosts: ["ENV:R1", "ENV:R2"]
+                hosts: ["${R1}", "${R2}"]
             }
         };
 
-        process.env.R1 = "r1";
-        process.env.R2 = "r2";
-        var result = complete(origin);
+        var result = complete(origin, {
+            R1: "r1",
+            R2: "r2"
+        });
         assert.deepEqual(result, {
             redis: {
                 hosts: ["r1", "r2"]
@@ -31,9 +33,22 @@ describe("configComplete", () => {
         });
     });
 
-    it("should return null if environment variable not found", () => {
+    it("should interpolate variable in string", () => {
         var origin = {
-            "test": "ENV:test"
+            "test": "${test} is hero"
+        };
+
+        var result = complete(origin, {
+            test: "Iron Man"
+        });
+        assert.deepStrictEqual(result, {
+            "test": "Iron Man is hero"
+        });
+    });
+
+    it("should return null if environment variable not found for a single env value", () => {
+        var origin = {
+            "test": "${test}"
         };
 
         var result = complete(origin);

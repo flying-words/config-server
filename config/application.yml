@@ -1,0 +1,6 @@
+hello: world
+super: mario
+test: ${TEST_ENV} is ${TEST_ENV2}
+redis: 
+  - ${REDIS_1}
+  - ${REDIS_2}

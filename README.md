@@ -1,6 +1,6 @@
 # limijiaoyin-config-server
 
-厘米脚印配置服务。为一个项目的其他服务提供统一的配置读取接口。
+厘米脚印基于 yaml 文件格式的配置服务。为一个项目的其他服务提供统一的配置读取接口。
 
 使用 limijiaoyin-config-server 的好处是：
 
@@ -14,40 +14,34 @@ __为了安全起见，请使用 https 。__
 
 所有的配置文件放在 config 文件夹当中，解析的规则如下：
 
-* ./config/application.json 提供了项目的通用配置
-* ./config/{environment}.json 文件提供了针对不同环境的配置
+* ./config/application.yml 提供了项目的通用配置
+* ./config/{environment}.yml 文件提供了针对不同环境的配置
 * 服务提供 `GET /config/:environment` 接口：
-  * 接受请求是，会根据 `environment` 参数读取 config 当中对应的 json 文件以及 application.json 文件
-  * 并对两个 json 文件的内容进行合并（`merge(application, environment)`），[merge 的规则](https://github.com/KyleAMathews/deepmerge#mergex-y)。，也就是说参数对应的 json 文件会覆盖 application.json 文件当中相应的配置。
+  * 接受请求是，会根据 `environment` 参数读取 config 当中对应的 yaml 文件以及 application.yml 文件
+  * 并对两个配置 文件的内容进行合并（`merge(application, environment)`），[merge 的规则](https://github.com/KyleAMathews/deepmerge#mergex-y)。，也就是说参数对应的 yaml 文件会覆盖 application.yaml 文件当中相应的配置。
 
 
 
-举个简单的例子，比如 config 当中有 development.json 和 application.json 两个文件：
+举个简单的例子，比如 config 当中有 development.yml 和 application.yml 两个文件：
 
-./config/application.json 文件：
+./config/application.yml 文件：
 
-```json
-{
-  "name": "application",
-  "hello": "world"
-}
+```yaml
+name: application
+hello: world
 ```
 
-./config/development.json 文件：
+./config/development.yml 文件：
 
-```json
-{
-  "hello": "kitty"
-}
+```yaml
+hello: kitty
 ```
 
 那么访问接口 `GET /config/development` 时，服务会返回：
 
-```json
-{
-  "name": "application",
-  "hello": "kitty"
-}
+```yaml
+name: application
+hello: kitty
 ```
 
 ### 接口鉴权
@@ -72,19 +66,16 @@ Host: xxxxx
 }
 ```
 
-### 密码等安全信息存储方式
+### 安全信息存储
 
 密码等安全信息不应该直接保存在配置文件当中，但是 limijiaoyin-config-server 支持使用环境变量保存安全信息，比如以下的配置文件：
 
-```json
-{
-  "wechat": {
-    "secret": "ENV:WECHAT_SECRET"
-  }
-}
+```yaml
+wechat:
+ secret: ${WECHAT_SECRET}
 ```
 
-服务在解析到 `ENV:XXXX` 格式的 value 的时候会读取对应的环境变量填充进来。比如环境变量是 `xxx-xxxx-xxx` 那么配置文件解析的结果则变成：
+服务在解析到 `${VARIABLE}` 格式的 value 时，会读取对应的环境变量填充进来。比如环境变量是 `xxx-xxxx-xxx` ，那么接口返回的结果就会变成：
 
 ```json
 {
@@ -94,3 +85,12 @@ Host: xxxxx
 }
 ```
 
+### FAQ
+
+为什么不用 consul、etcd 这样的配置服务？
+
+> 很多项目的规模并不大，所以使用 consul、etcd 之类的服务回使得项目的复杂程度升高。为了折中，我们选择了 limijiaoyin-config-server 方案。
+
+为什么不用 JSON 而用 YAML？
+
+> 关于应该用哪种格式写配置文件的争论实在太多太多，这里不做过多讨论。从实战经验来看，之所以选择 yaml 主要是因为 yaml 天生支持注释。

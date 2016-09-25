@@ -1,6 +1,7 @@
 var fs = require('fs');
 var path = require('path');
 var express = require('express');
+var yaml = require('js-yaml');
 var cors = require('cors');
 var denodeify = require('denodeify');
 var readFile = denodeify(fs.readFile);
@@ -22,30 +23,29 @@ function validateApiKey(req, res, next) {
     next();
 }
 
-app.get('/config/:env', 
+app.get('/config/:env',
     validateApiKey,
     (req, res) => {
-    var env = req.params.env;
-    var base = path.resolve(__dirname, 'config', `application.json`);
-    var filename = path.resolve(__dirname, 'config', `${env}.json`);
-    Promise.all([
-        readFile(base, {encoding: 'utf-8'}),
-        readFile(filename, {encoding: 'utf-8'})
-    ]).then(files => {
-        var [base, envConfig] = files.map(content => JSON.parse(content));
-        var result = mergeConfig(base, envConfig);
-        res.json(configComplete(result));
-    }).catch(e => {
-        console.error(e);
-        res.status(500).json({
-            errorId: 'internal-server-error',
-            errorMsg: e.message
+        var env = req.params.env;
+        var base = path.resolve(__dirname, 'config', `application.yml`);
+        var filename = path.resolve(__dirname, 'config', `${env}.yml`);
+        Promise.all([
+            readFile(base, { encoding: 'utf-8' }),
+            readFile(filename, { encoding: 'utf-8' })
+        ]).then(files => {
+            var [base, envConfig] = files.map(content => yaml.safeLoad(content));
+            var result = mergeConfig(base, envConfig);
+            res.json(configComplete(result, Object.assign({}, process.env)));
+        }).catch(e => {
+            console.error(e);
+            res.status(500).json({
+                errorId: 'internal-server-error',
+                errorMsg: e.message
+            });
         });
     });
-});
 
 var port = 9000;
 app.listen(port, () => {
     console.log('listening on port', port);
 });
-
