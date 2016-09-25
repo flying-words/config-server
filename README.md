@@ -89,7 +89,7 @@ wechat:
 
 为什么不用 consul、etcd 这样的配置服务？
 
-> 很多项目的规模并不大，所以使用 consul、etcd 之类的服务回使得项目的复杂程度升高。为了折中，我们选择了 limijiaoyin-config-server 方案。
+> 很多项目的规模并不大，使用 consul、etcd 之类的服务会使得项目的复杂程度升高。为了折中，我们选择了 limijiaoyin-config-server 方案。
 
 为什么不用 JSON 而用 YAML？
 
