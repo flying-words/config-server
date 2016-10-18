@@ -1,0 +1,9 @@
+# sunqiao's development config for husky
+husky:
+    leadBoard: "xxxx" # TODO: 配置自己测试用的看板
+    mongodb: # TODO：配置测试环境 mongodb
+        host: ""  
+        port: ""
+        database: ""
+        username: ""
+        password: ""
