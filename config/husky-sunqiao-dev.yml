@@ -1,6 +1,6 @@
 # sunqiao's development config for husky
 husky:
-    leadBoard: "LmjjMC2o" # TODO: 配置自己测试用的看板
+    leadBoard: "0FXlgVSI" # TODO: 配置自己测试用的看板
     mongodb: # TODO：配置测试环境 mongodb
         host: "localhost"  
         port: "27017"
