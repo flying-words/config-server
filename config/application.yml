@@ -23,7 +23,7 @@ doberman:
     sentry:
         dsn: http://aaed2570008541ad9fcd09007285c192:0ddd8a87dcda452c983bd2606f1f1770@sentry.limijiaoyin.com/11
     trello:
-        disabled: false,
+        disabled: false
         freelancerBoard: JaUJzxLw
     auth:
         clientID: ${DOBERMAN_LIMIJIAOYIN_AUTH_CLIENT_ID}
