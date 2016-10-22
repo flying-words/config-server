@@ -4,9 +4,9 @@ doberman:
     clientID: ZoucFj8nHvYUEYvLx3gwEjwy2hFnEK1mItxzi67T
     clientSecret: z5ScpuazJW0xtCNOnLpnAAXxvMYvZEYstatLguxZNUWvX1jzGMcfbHVWCEk860JOb92faxQm6cXDytvkPygZX4EYyfsOEZSBByd7sIsQanVBWJhHe1cB3ASZsbiD5QMF
   cache:
-    host: localhost
+    host: 127.0.0.1
   mongodb:
-    host: localhost
+    host: 127.0.0.1
     port: 27017
     database: doberman
     username:
