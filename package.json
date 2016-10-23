@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "node_modules/.bin/istanbul cover _mocha -- -R spec"
+    "test": "./scripts/validateConfig && node_modules/.bin/istanbul cover _mocha -- -R spec"
   },
   "author": "yangchen@limijiaoyin.com",
   "dependencies": {
@@ -20,6 +20,7 @@
   },
   "devDependencies": {
     "istanbul": "^0.4.5",
-    "mocha": "^3.0.2"
+    "mocha": "^3.0.2",
+    "pre-commit": "^1.1.3"
   }
 }
