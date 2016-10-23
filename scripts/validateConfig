@@ -1,0 +1,20 @@
+#!/usr/bin/env node
+
+var fs = require('fs');
+var co = require('co');
+var path = require('path');
+var generateConfig = require('../generateConfig');
+console.log(generateConfig);
+
+var files = fs.readdirSync(path.resolve(__dirname, '..', 'config'));
+co(function*() {
+    for (var i = 0; i < files.length; i++) {
+    	var file = files[i];
+        var env = path.basename(file, '.yml');
+    	console.log('validate config', env);
+        var config = yield generateConfig('application', env);
+    }
+}).catch(e => {
+    console.error(e);
+    process.exit(-1);
+});

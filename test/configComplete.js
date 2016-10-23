@@ -46,6 +46,17 @@ describe("configComplete", () => {
         });
     });
 
+    it("should interpolate empty string for variable in string if the variable is not defined", () => {
+        var origin = {
+            "test": "${test} is hero"
+        };
+
+        var result = complete(origin, {});
+        assert.deepStrictEqual(result, {
+            "test": " is hero"
+        });
+    });
+
     it("should return null if environment variable not found for a single env value", () => {
         var origin = {
             "test": "${test}"

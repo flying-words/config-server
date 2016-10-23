@@ -8,5 +8,5 @@ COPY . /src
 RUN node_modules/.bin/mocha 
 
 EXPOSE 9000
-CMD node app.js
+CMD node server.js
 
