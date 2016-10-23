@@ -4,5 +4,5 @@ pigleaderboard:
     standups: '5035'
     mongodb:
         host: 'localhost'
-        port: "27017"
+        port: 27017
         database: "pigleaderboard"
