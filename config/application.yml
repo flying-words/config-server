@@ -17,8 +17,8 @@ wechat:
 timezone: Asia/Shanghai
 pigleaderboard:
     channel: '#general'
-    boards: ''
-    standup: ''
+    boards: 'yOCWnVsn,PFvzorYj,ouTSW6bf,GAnfcNYs,4UkDF9pn,uEgAH6lk'
+    standup: '5035'
     sentry:
         dsn: ""
     mongodb:

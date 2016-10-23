@@ -1,12 +1,3 @@
-# sunqiao's development config for husky
-pigleaderboard:
-    channel: '@sunqiao'
-    boards: ''
-    standups: ''
-    mongodb:
-        host: 'localhost'
-        port: "27017"
-        database: "pigleaderboard"
 husky:
     leadBoard: "0FXlgVSI"
     mongodb:
