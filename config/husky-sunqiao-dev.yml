@@ -1,7 +1,15 @@
 # sunqiao's development config for husky
+pigleaderboard:
+    channel: '@sunqiao'
+    boards: ''
+    standups: ''
+    mongodb:
+        host: 'localhost'
+        port: "27017"
+        database: "pigleaderboard"
 husky:
-    leadBoard: "0FXlgVSI" # TODO: 配置自己测试用的看板
-    mongodb: # TODO：配置测试环境 mongodb
+    leadBoard: "0FXlgVSI"
+    mongodb:
         host: "localhost"  
         port: "27017"
         database: "husky"

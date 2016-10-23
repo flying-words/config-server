@@ -2,7 +2,20 @@ privateApiKey: ${COMMON_PRIVATE_API_KEY}
 trello:
     key: ${COMMON_TRELLO_KEY}
     token: ${COMMON_TRELLO_TOKEN}
+geekbot:
+    key: ${COMMON_GEEKBOT_KEY}
+slack:
+    hookUrl: ${COMMON_SLACK_HOOK_URL}
+    token: ${COMMON_SLACK_TOKEN}
 timezone: Asia/Shanghai
+pigleaderboard:
+    channel: '#general'
+    boards: ''
+    standup: ''
+    sentry:
+        dsn: ""
+    mongodb:
+        host: ""
 husky:
     leadBoard: 0FXlgVSI
     trello:
