@@ -1,6 +1,6 @@
 husky:
-    leadBoard: "0FXlgVSI"
-    mongodb:
-        host: "localhost"  
-        port: "27017"
-        database: "husky"
+  leadBoard: "0FXlgVSI"
+  mongodb:
+    host: "localhost"  
+    port: "27017"
+    database: "husky"
