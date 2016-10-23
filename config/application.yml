@@ -7,6 +7,13 @@ geekbot:
 slack:
     hookUrl: ${COMMON_SLACK_HOOK_URL}
     token: ${COMMON_SLACK_TOKEN}
+guru:
+    email: ${COMMON_GURU_EMAIL}
+    token: ${COMMON_GURU_TOKEN}
+secret: ${COMMON_SECRET}
+timezone: Asia/Shanghai
+wechat:
+    tokenService: wechat-token-service.jiaoyin.cm
 timezone: Asia/Shanghai
 pigleaderboard:
     channel: '#general'
@@ -24,3 +31,22 @@ husky:
         dsn: http://90abac4a55044c17907ee69bc6d8517f:6e39d3cac9134febb0299831bee14833@sentry.limijiaoyin.com/22
     mongodb:
         host: ""  # 产品环境使用的 mongodb 配置，暂时无
+doberman:
+    guruBoard: 1d25ed78-84a7-4ea9-941e-b5cd73979b31
+    hostname: doberman-mobile.jiaoyin.cm
+    sentry:
+        dsn: http://aaed2570008541ad9fcd09007285c192:0ddd8a87dcda452c983bd2606f1f1770@sentry.limijiaoyin.com/11
+    trello:
+        disabled: false
+        freelancerBoard: JaUJzxLw
+    auth:
+        clientID: ${DOBERMAN_LIMIJIAOYIN_AUTH_CLIENT_ID}
+        clientSecret: ${DOBERMAN_LIMIJIAOYIN_AUTH_CLIENT_SECRET}
+    cache:
+        host: redis
+    mongodb:
+        host: 119.28.18.203
+        port: 38819
+        database: doberman
+        username: ${DOBERMAN_DATABASE_USERNAME}
+        password: ${DOBERMAN_DATABASE_PASSWORD}
