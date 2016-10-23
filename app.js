@@ -25,9 +25,10 @@ module.exports.createApp = function() {
                 res.json(config);
             }).catch(e => {
                 console.error(e);
+                var errorMsg = e.code === 'ENOENT' ? 'file not found' : 'internal server error';
                 res.status(500).json({
                     errorId: 'internal-server-error',
-                    errorMsg: e.message
+                    errorMsg: errorMsg
                 });
             });
         });
