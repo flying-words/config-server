@@ -1,7 +1,7 @@
 pigleaderboard:
   channel: '@sunqiao'
   boards: 'GAnfcNYs'
-  standups: '5035'
+  standup: '5035'
   mongodb:
     host: 'localhost'
     port: 27017
