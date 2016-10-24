@@ -2,6 +2,9 @@ privateApiKey: ${COMMON_PRIVATE_API_KEY}
 trello:
     key: ${COMMON_TRELLO_KEY}
     token: ${COMMON_TRELLO_TOKEN}
+trello2:
+    key: ${COMMON_TRELLO_KEY2}
+    token: ${COMMON_TRELLO_TOKEN2}
 geekbot:
     key: ${COMMON_GEEKBOT_KEY}
 slack:
