@@ -1,5 +1,6 @@
 husky:
-  leadBoard: "0FXlgVSI"
+  trello:
+    leadBoard: "0FXlgVSI"
   mongodb:
     host: "localhost"  
     port: "27017"
