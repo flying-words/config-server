@@ -38,7 +38,7 @@ husky:
     mongodb:
         host: 10.144.83.107
         port: 21823
-        dtabase: husky
+        database: husky
         
 doberman:
     guruBoard: 1d25ed78-84a7-4ea9-941e-b5cd73979b31
