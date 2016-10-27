@@ -25,7 +25,7 @@ pigleaderboard:
     sentry:
         dsn: "http://18b52a1a1f0d4d3ea921fd5fbe8b0df2:bfe971b0d6ed4b87b958a7579e06341d@sentry.limijiaoyin.com/23"
     mongodb:
-        host: 10.144.83.107
+        host: 119.28.11.37
         port: 28193
         database: pigleaderboard
 
@@ -36,7 +36,7 @@ husky:
     sentry:
         dsn: http://90abac4a55044c17907ee69bc6d8517f:6e39d3cac9134febb0299831bee14833@sentry.limijiaoyin.com/22
     mongodb:
-        host: 10.144.83.107
+        host: 119.28.11.37
         port: 21823
         database: husky
         
@@ -54,7 +54,7 @@ doberman:
     cache:
         host: redis
     mongodb:
-        host: 119.28.18.203
+        host: 119.28.11.37
         port: 38819
         database: doberman
         username: ${DOBERMAN_DATABASE_USERNAME}
