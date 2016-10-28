@@ -5,7 +5,7 @@ COPY ./package.json /src/package.json
 RUN npm install
 
 COPY . /src
-RUN node_modules/.bin/mocha 
+RUN npm test
 
 EXPOSE 9000
 CMD node server.js
