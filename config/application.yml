@@ -59,3 +59,9 @@ doberman:
         database: doberman
         username: ${DOBERMAN_DATABASE_USERNAME}
         password: ${DOBERMAN_DATABASE_PASSWORD}
+
+dealer:
+  slack:
+    hook_url: https://hooks.slack.com/services/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
+    channel: '#general'
+  boards: yOCWnVsn,PFvzorYj,ouTSW6bf,GAnfcNYs,4UkDF9pn
