@@ -1,0 +1,5 @@
+dealer:
+  slack:
+    hook_url: https://hooks.slack.com/services/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
+    channel: \@jarvys
+  boards: yOCWnVsn,PFvzorYj,ouTSW6bf,GAnfcNYs,4UkDF9pn
