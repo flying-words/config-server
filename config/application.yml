@@ -52,9 +52,10 @@ doberman:
         clientID: ${DOBERMAN_LIMIJIAOYIN_AUTH_CLIENT_ID}
         clientSecret: ${DOBERMAN_LIMIJIAOYIN_AUTH_CLIENT_SECRET}
     cache:
-        host: redis
+        host: 10.144.97.139
+        port: 20197
     mongodb:
-        host: 119.28.11.37
+        host: 10.144.97.139
         port: 38819
         database: doberman
         username: ${DOBERMAN_DATABASE_USERNAME}
