@@ -5,6 +5,7 @@ doberman:
     clientSecret: z5ScpuazJW0xtCNOnLpnAAXxvMYvZEYstatLguxZNUWvX1jzGMcfbHVWCEk860JOb92faxQm6cXDytvkPygZX4EYyfsOEZSBByd7sIsQanVBWJhHe1cB3ASZsbiD5QMF
   cache:
     host: 127.0.0.1
+    port: 6379
   mongodb:
     host: 127.0.0.1
     port: 27017
