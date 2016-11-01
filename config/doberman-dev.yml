@@ -1,0 +1,16 @@
+doberman:
+  hostname: doberman.io
+  auth:
+    clientID: ZoucFj8nHvYUEYvLx3gwEjwy2hFnEK1mItxzi67T
+    clientSecret: z5ScpuazJW0xtCNOnLpnAAXxvMYvZEYstatLguxZNUWvX1jzGMcfbHVWCEk860JOb92faxQm6cXDytvkPygZX4EYyfsOEZSBByd7sIsQanVBWJhHe1cB3ASZsbiD5QMF
+  trello:
+    disabled: true
+  cache:
+    host: 127.0.0.1
+    port: 6379
+  mongodb:
+    host: 127.0.0.1
+    port: 27017
+    database: doberman
+    username:
+    password:
