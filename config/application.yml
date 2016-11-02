@@ -20,7 +20,7 @@ timezone: Asia/Shanghai
 
 pigleaderboard:
     channel: '#general'
-    boards: 'yOCWnVsn,PFvzorYj,ouTSW6bf,GAnfcNYs,4UkDF9pn,uEgAH6lk,98lO0FiB,Js4fIul5'
+    boards: 'yOCWnVsn,PFvzorYj,ouTSW6bf,GAnfcNYs,4UkDF9pn,98lO0FiB,Js4fIul5'
     standup: '5035'
     sentry:
         dsn: "http://18b52a1a1f0d4d3ea921fd5fbe8b0df2:bfe971b0d6ed4b87b958a7579e06341d@sentry.limijiaoyin.com/23"
