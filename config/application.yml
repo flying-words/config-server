@@ -1,4 +1,8 @@
 privateApiKey: ${COMMON_PRIVATE_API_KEY}
+qiniu:
+    accessKey: 0V3pdbcLhNOuUTs71Q-ynVTx3CM8DJZ0Va5Y9BiF
+    secretKey: RNB_fJHHlIEPT1W1gHarFf22VDBNj5qeo-34SS5N
+    bucketName: statics
 trello:
     key: ${COMMON_TRELLO_KEY}
     token: ${COMMON_TRELLO_TOKEN}
