@@ -38,6 +38,7 @@ husky:
         disabled: false
         leadBoard: 0FXlgVSI
         clientBoard: Gl8PvawP
+        dealBoard: yGAGDF9P
     channel: '#marketing'
     sentry:
         dsn: http://90abac4a55044c17907ee69bc6d8517f:6e39d3cac9134febb0299831bee14833@sentry.limijiaoyin.com/22
