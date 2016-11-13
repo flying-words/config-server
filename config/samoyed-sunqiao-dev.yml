@@ -1,4 +1,4 @@
-husky:
+samoyed:
     mongodb:
         host: "localhost"  
         port: "27017"
