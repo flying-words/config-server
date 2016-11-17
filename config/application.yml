@@ -87,3 +87,15 @@ accounts:
         host: 10.144.97.139
         port: 28199
         database: accounts
+
+samoyed:
+    trello:
+        disabled: false
+        reviewBoard: Wpf03xUX
+    channel: '#service'
+    sentry:
+        dsn: http://3279a34655ba433f8a39ccb17dbe84c1:e5881328a455473c93dcfa97c3d65cb7@sentry.limijiaoyin.com/25
+    mongodb:
+        host: 10.144.97.139
+        port: 28200
+        database: samoyed
