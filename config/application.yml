@@ -51,7 +51,7 @@ huskyMobile:
     auth:
         clientId: jcxSmXpY6kQLn89Sgfv79yRE4CYmuIuntEgz1lSK
         clientSecret: 9dFxRjc6Ophic86ijEaHZI5YFGH4lAtzocB6CE3iLsJoscBUiX6kBQr2fqVlCtFT6N20VvzknC2mRZPLc7ufiQ0BMzSwf4KVviVM4J4RMi6gqA5xAzY8tNTzEiDW8eyR
-    hostname: husky-mobile.jiaoyin.cm
+    hostname: husky-mobile.hk.jiaoyin.cm
     sentry:
         dsn: http://9de92f506b8d437584d1d5dfca5adaa2:9c6984ebf5d344cd809f7a8d5cb944da@sentry.limijiaoyin.com/26
 
