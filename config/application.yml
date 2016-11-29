@@ -46,6 +46,8 @@ husky:
         host: 119.28.11.37
         port: 21823
         database: husky
+    google:
+        folderId: 0B63u_FwVZEHoOHdpY3dfNks0bVk
 
 huskyMobile:
     auth:
