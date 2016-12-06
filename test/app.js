@@ -10,7 +10,9 @@ describe('app', () => {
         originToken = process.env.CLIENT_TOKEN;
         process.env.CLIENT_TOKEN = 'foobar';
         mockery.enable({
-            cleanCache: true
+            cleanCache: true,
+            warnOnReplace: false,
+            warnOnUnregistered: false
         });
         mockery.registerAllowable('../app');
         mockery.resetCache();

@@ -6,7 +6,9 @@ var fsMock = require('./fsMock');
 describe('generateConfig', () => {
     beforeEach(() => {
         mockery.enable({
-            cleanCache: true
+            cleanCache: true,
+            warnOnReplace: false,
+            warnOnUnregistered: false
         });
         mockery.registerAllowable('../generateConfig');
         mockery.resetCache();
