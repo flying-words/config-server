@@ -1,8 +1,8 @@
 taco:
     slack:
         token: xoxb-114331391812-haIdHJOId86HKebjzvJlo8Ix
-        client_id: "113537479248.114942144710"
-        client_secret: 0d9a3e8cd8d4c65bf7bdf6a0aa22820d
+        #client_id: "113537479248.114942144710"
+        #client_secret: 0d9a3e8cd8d4c65bf7bdf6a0aa22820d
     hostname: taco.io
 
 
