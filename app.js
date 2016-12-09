@@ -18,6 +18,11 @@ function validateToken(req, res, next) {
 module.exports.createApp = function() {
     var app = express();
     app.use(cors());
+
+    app.get('/ping', (req, res) => {
+        res.send('pong');
+    });
+
     app.get('/config/:env',
         validateToken,
         (req, res) => {
