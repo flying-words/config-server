@@ -96,7 +96,7 @@ dealer:
   boards: yOCWnVsn,PFvzorYj,ouTSW6bf,GAnfcNYs,4UkDF9pn
   mongodb:
         host: 10.144.97.139
-        port: 28200
+        port: 28037
         database: dealer
 
 accounts:
