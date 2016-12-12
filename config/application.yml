@@ -17,6 +17,9 @@ slack:
 guru:
     email: ${COMMON_GURU_EMAIL}
     token: ${COMMON_GURU_TOKEN}
+perdoo:
+    username: ${COMMON_PERDOO_USERNAME}
+    password: ${COMMON_PERDOO_PASSWORD}
 secret: ${COMMON_SECRET}
 wechat:
     tokenService: wechat-token-service.jiaoyin.cm
