@@ -51,6 +51,8 @@ husky:
         database: husky
     google:
         folderId: 0B63u_FwVZEHoOHdpY3dfNks0bVk
+    template:
+        workload: 1TUxIrOdPQ3cFLnxNN53yLjmJKvrImDnlr9CJ-r9kN7w
 
 huskyMobile:
     auth:
