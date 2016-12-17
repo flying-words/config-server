@@ -120,3 +120,9 @@ samoyed:
         host: 10.144.97.139
         port: 28200
         database: samoyed
+
+resumeMotherFuckerWebService:
+    mongodb:
+        host: 10.144.97.139
+        port: 41231
+        database: rmf
