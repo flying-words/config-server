@@ -1,5 +1,6 @@
 husky:
   trello:
+    disabled: false
     leadBoard: "0FXlgVSI"
   mongodb:
     host: "localhost"  
