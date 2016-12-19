@@ -1,8 +1,0 @@
-husky:
-  trello:
-    disabled: false
-    projectBoard: "xYEmPkq3"
-  mongodb:
-    host: "localhost"  
-    port: "27017"
-    database: "akitas"

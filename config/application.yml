@@ -121,19 +121,6 @@ samoyed:
         port: 28200
         database: samoyed
 
-akitas:
-    trello:
-        disabled: false
-        projectBoard: xYEmPkq3
-        taskBoard: AIO64gwQ
-    channel: '#service'
-    sentry:
-        dsn: http://5867b044dea64ca0b985ad1a79bd9f7c:f48980d4fdda409f97b5dd8fb7ec46bb@sentry.limijiaoyin.com/3
-    mongodb:
-        host: 119.28.11.37
-        port: 32788
-        database: akitas
-
 resumeMotherFuckerWebService:
     mongodb:
         host: 10.144.97.139
