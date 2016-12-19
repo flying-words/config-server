@@ -117,7 +117,7 @@ samoyed:
     sentry:
         dsn: http://3279a34655ba433f8a39ccb17dbe84c1:e5881328a455473c93dcfa97c3d65cb7@sentry.limijiaoyin.com/25
     mongodb:
-        host: 10.144.97.139
+        host: 119.28.11.37
         port: 28200
         database: samoyed
 
