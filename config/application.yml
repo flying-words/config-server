@@ -126,3 +126,7 @@ resumeMotherFuckerWebService:
         host: 10.144.97.139
         port: 41231
         database: rmf
+
+files:
+    sentry:
+        dsn: http://f83272056f314b34abdd3420150b13b8:2fd36b80a8c14de2812673a8fe46231f@sentry.limijiaoyin.com/29
