@@ -42,6 +42,7 @@ husky:
         leadBoard: 0FXlgVSI
         clientBoard: Gl8PvawP
         dealBoard: yGAGDF9P
+        projectBoard: xYEmPkq3
     channel: '#marketing'
     sentry:
         dsn: http://90abac4a55044c17907ee69bc6d8517f:6e39d3cac9134febb0299831bee14833@sentry.limijiaoyin.com/22
@@ -117,7 +118,7 @@ samoyed:
     sentry:
         dsn: http://3279a34655ba433f8a39ccb17dbe84c1:e5881328a455473c93dcfa97c3d65cb7@sentry.limijiaoyin.com/25
     mongodb:
-        host: 10.144.97.139
+        host: 119.28.11.37
         port: 28200
         database: samoyed
 
@@ -126,3 +127,7 @@ resumeMotherFuckerWebService:
         host: 10.144.97.139
         port: 41231
         database: rmf
+
+files:
+    sentry:
+        dsn: http://f83272056f314b34abdd3420150b13b8:2fd36b80a8c14de2812673a8fe46231f@sentry.limijiaoyin.com/29
