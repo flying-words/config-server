@@ -20,6 +20,9 @@ guru:
 perdoo:
     username: ${COMMON_PERDOO_USERNAME}
     password: ${COMMON_PERDOO_PASSWORD}
+xero:
+    key: ${COMMON_XERO_KEY}
+    secret: ${COMMON_XERO_SECRET}
 secret: ${COMMON_SECRET}
 wechat:
     tokenService: wechat-token-service.jiaoyin.cm
