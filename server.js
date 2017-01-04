@@ -1,4 +1,4 @@
-var createApp = require('../app').createApp;
+var createApp = require('./app').createApp;
 
 var app = createApp();
 
