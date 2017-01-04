@@ -137,6 +137,6 @@ files:
 
 timesheetRecorder:
     mongodb:
-        host: 0.0.0.0
-        port: 27017
+        host: 10.144.97.139
+        port: 62156
         database: timesheetRecorder
