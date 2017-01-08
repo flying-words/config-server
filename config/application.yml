@@ -46,6 +46,7 @@ husky:
         clientBoard: Gl8PvawP
         dealBoard: yGAGDF9P
         projectBoard: xYEmPkq3
+        taskBoard: AIO64gwQ
     channel: '#marketing'
     sentry:
         dsn: http://90abac4a55044c17907ee69bc6d8517f:6e39d3cac9134febb0299831bee14833@sentry.limijiaoyin.com/22
@@ -54,7 +55,8 @@ husky:
         port: 21823
         database: husky
     google:
-        folderId: 0B63u_FwVZEHoOHdpY3dfNks0bVk
+        dealFolderId: 0B63u_FwVZEHoOHdpY3dfNks0bVk
+        contractFolderId: 0B63u_FwVZEHobmtFYm45dS04Q2s
     template:
         workload: 1TUxIrOdPQ3cFLnxNN53yLjmJKvrImDnlr9CJ-r9kN7w
 
