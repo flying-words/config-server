@@ -15,12 +15,30 @@ function validateToken(req, res, next) {
     next();
 }
 
-module.exports.createApp = function() {
+module.exports.createApp = function () {
     var app = express();
     app.use(cors());
 
     app.get('/ping', (req, res) => {
         res.send('pong');
+    });
+
+    var version = null;
+    app.get('/version', (req, res) => {
+        if (version) {
+            return res.json({ version });
+        }
+
+        try {
+            version = fs.readFileSync(path.resolve('.', '.version'), { encoding: 'utf-8' });
+            return res.json({ version });
+        } catch (e) {
+            console.error(e);
+            return res.status(500).json({
+                errorId: 'internal-server-error',
+                errorMsg: '.version file not found'
+            });
+        }
     });
 
     app.get('/config/:env',

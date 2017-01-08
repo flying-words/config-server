@@ -10,7 +10,7 @@ var mockDefaultConfig = {
 };
 
 module.exports = {
-    readFile: function(file, options, callback) {
+    readFile: function (file, options, callback) {
         if (/application/.test(file)) {
             process.nextTick(() => {
                 var content = JSON.stringify(mockDefaultConfig);
@@ -25,6 +25,14 @@ module.exports = {
             process.nextTick(() => {
                 callback(new Error('file not found'));
             });
+        }
+    },
+
+    readFileSync: function (file, options) {
+        if (/version/.test(file)) {
+            return 'hello'
+        } else {
+            return '';
         }
     },
 
