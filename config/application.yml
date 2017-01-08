@@ -55,7 +55,8 @@ husky:
         port: 21823
         database: husky
     google:
-        folderId: 0B63u_FwVZEHoOHdpY3dfNks0bVk
+        dealFolderId: 0B63u_FwVZEHoOHdpY3dfNks0bVk
+        contractFolderId: 0B63u_FwVZEHobmtFYm45dS04Q2s
     template:
         workload: 1TUxIrOdPQ3cFLnxNN53yLjmJKvrImDnlr9CJ-r9kN7w
 
