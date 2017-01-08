@@ -9,7 +9,7 @@ RUN npm install
 COPY . /src
 RUN npm test
 
-RUN echo $(git rev-parse --short HEAD) > .version # 输出版本文件
+RUN echo $(git rev-parse --short HEAD) > .version
 
 EXPOSE 9000
 CMD node server.js

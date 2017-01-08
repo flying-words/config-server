@@ -28,14 +28,6 @@ module.exports = {
         }
     },
 
-    readFileSync: function (file, options) {
-        if (/version/.test(file)) {
-            return 'hello'
-        } else {
-            return '';
-        }
-    },
-
     mockDefaultConfig,
     mockTestConfig
 }

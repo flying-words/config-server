@@ -23,24 +23,6 @@ module.exports.createApp = function () {
         res.send('pong');
     });
 
-    var version = null;
-    app.get('/version', (req, res) => {
-        if (version) {
-            return res.json({ version });
-        }
-
-        try {
-            version = fs.readFileSync(path.resolve('.', '.version'), { encoding: 'utf-8' });
-            return res.json({ version });
-        } catch (e) {
-            console.error(e);
-            return res.status(500).json({
-                errorId: 'internal-server-error',
-                errorMsg: '.version file not found'
-            });
-        }
-    });
-
     app.get('/config/:env',
         validateToken,
         (req, res) => {

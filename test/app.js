@@ -19,18 +19,6 @@ describe('app', () => {
         mockery.registerMock('fs', fsMock);
     });
 
-    it('should return version from version file', done => {
-        var createApp = require('../app').createApp;
-        var app = createApp();
-        request(app)
-            .get('/version')
-            .expect(200)
-            .expect(res => {
-                assert.equal(res.body.version, 'hello');
-            })
-            .end(done);
-    });
-
     it("return unauthorized if client token is invalid", done => {
         var createApp = require('../app').createApp;
         var app = createApp();
