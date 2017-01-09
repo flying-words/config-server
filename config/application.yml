@@ -59,6 +59,7 @@ husky:
         contractFolderId: 0B63u_FwVZEHobmtFYm45dS04Q2s
     template:
         workload: 1TUxIrOdPQ3cFLnxNN53yLjmJKvrImDnlr9CJ-r9kN7w
+        timesheet: 1a1xSB7ryPrqsq3-qaauyEddzqCLuHeFDeX0j95K1Fmc
 
 huskyMobile:
     auth:
