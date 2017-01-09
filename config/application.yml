@@ -142,3 +142,6 @@ timesheetRecorder:
         host: 10.144.97.139
         port: 62156
         database: timesheetRecorder
+    slack:
+        clientId: 3025362346.124318311617
+        clientSecret: 0a26dfecc8358a09c7235e9a832d77e6
