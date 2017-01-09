@@ -15,7 +15,7 @@ function validateToken(req, res, next) {
     next();
 }
 
-module.exports.createApp = function() {
+module.exports.createApp = function () {
     var app = express();
     app.use(cors());
 
