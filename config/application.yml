@@ -147,5 +147,5 @@ timesheetRecorder:
 dealerboardBackend:
     hostname: dealer-board-backend.hk.limijiaoyin.io
     slack:
-        clientId: 3025362346.124318311617
+        clientId: '3025362346.124318311617'
         clientSecret: 0a26dfecc8358a09c7235e9a832d77e6
