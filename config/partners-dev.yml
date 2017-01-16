@@ -1,4 +1,10 @@
 husky:
+    trello:
+        disabled: true
+    mongodb:
+        host: localhost
+        port: 27017
+        database: husky
     partners:
         auth:
             clientId: zYgqDDBwfmJUamLUXKMcPJPzfS2Yv1ulQx5OM0bP
