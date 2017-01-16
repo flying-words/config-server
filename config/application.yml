@@ -25,7 +25,7 @@ xero:
     secret: ${COMMON_XERO_SECRET}
 secret: ${COMMON_SECRET}
 wechat:
-    tokenService: wechat-token-service.slide.cm
+    tokenService: wechat-token-service.limijiaoyin.com
 timezone: Asia/Shanghai
 
 pigleaderboard:
