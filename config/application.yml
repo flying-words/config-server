@@ -64,8 +64,8 @@ husky:
     partners:
         guruBoard: 1d25ed78-84a7-4ea9-941e-b5cd73979b31
         auth:
-            clientId: zYgqDDBwfmJUamLUXKMcPJPzfS2Yv1ulQx5OM0bP
-            clientSecret: RIGyRJMDVu4k7hGWG4egHLgdkgV8koumRUJfmUaKbsmpXakCUI1n9gahlodebwr2h9dkPXIkXQzUQGgzJm3mnMGEEDTxOrhWETiYGBC8uj4wHo3602ZQh9vSRsmDWNh1
+            clientID: ${DOBERMAN_LIMIJIAOYIN_AUTH_CLIENT_ID}
+            clientSecret: ${DOBERMAN_LIMIJIAOYIN_AUTH_CLIENT_SECRET}
         hostname: doberman-mobile.hk.jiaoyin.cm
 
 
@@ -86,25 +86,8 @@ samoyedNps:
         dsn: http://3f37e915c6ee457da99061f8d04ac3bd:6effab1c3a5a4cffa22713e80752cc4c@sentry.limijiaoyin.com/27
 
 doberman:
-    guruBoard: 1d25ed78-84a7-4ea9-941e-b5cd73979b31
-    hostname: doberman-mobile.hk.jiaoyin.cm
     sentry:
         dsn: http://aaed2570008541ad9fcd09007285c192:0ddd8a87dcda452c983bd2606f1f1770@sentry.limijiaoyin.com/11
-    trello:
-        disabled: false
-        freelancerBoard: JaUJzxLw
-    auth:
-        clientID: ${DOBERMAN_LIMIJIAOYIN_AUTH_CLIENT_ID}
-        clientSecret: ${DOBERMAN_LIMIJIAOYIN_AUTH_CLIENT_SECRET}
-    cache:
-        host: 10.144.97.139
-        port: 20197
-    mongodb:
-        host: 10.144.97.139
-        port: 38819
-        database: doberman
-        username: ${DOBERMAN_DATABASE_USERNAME}
-        password: ${DOBERMAN_DATABASE_PASSWORD}
 
 dealer:
   slack:
