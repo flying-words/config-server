@@ -64,7 +64,7 @@ husky:
     partners:
         guruBoard: 1d25ed78-84a7-4ea9-941e-b5cd73979b31
         auth:
-            clientID: ${DOBERMAN_LIMIJIAOYIN_AUTH_CLIENT_ID}
+            clientId: ${DOBERMAN_LIMIJIAOYIN_AUTH_CLIENT_ID}
             clientSecret: ${DOBERMAN_LIMIJIAOYIN_AUTH_CLIENT_SECRET}
         hostname: doberman-mobile.hk.jiaoyin.cm
 
