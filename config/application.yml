@@ -93,7 +93,7 @@ dealer:
   slack:
     hook_url: https://hooks.slack.com/services/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
     channel: '#general'
-  boards: yOCWnVsn,PFvzorYj,ouTSW6bf,GAnfcNYs,4UkDF9pn
+  boards: yOCWnVsn,PFvzorYj,ouTSW6bf,GAnfcNYs,4UkDF9pn,Js4fIul5
   mongodb:
         host: 10.144.97.139
         port: 28037
