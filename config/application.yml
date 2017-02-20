@@ -119,6 +119,8 @@ samoyed:
     mongodb:
         host: 119.28.11.37
         port: 28200
+        username: samoyed
+        password: C4F57CFD-A9D1-4F25-B66D-133E0B6CA3C2
         database: samoyed
 
 resumeMotherFuckerWebService:
