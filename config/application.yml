@@ -107,6 +107,8 @@ accounts:
     mongodb:
         host: 10.144.97.139
         port: 28199
+        username: accounts
+        password: A41D3667-B377-40FE-B8CF-9D552E2BFD6C
         database: accounts
 
 samoyed:
