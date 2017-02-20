@@ -54,6 +54,8 @@ husky:
     mongodb:
         host: 119.28.11.37
         port: 21823
+        username: husky
+        password: FAAC5CA6-75A8-4D56-B05F-F13EF39427B2
         database: husky
     google:
         dealFolderId: 0B63u_FwVZEHoOHdpY3dfNks0bVk
