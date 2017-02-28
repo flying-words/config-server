@@ -68,7 +68,7 @@ husky:
         auth:
             clientId: ${DOBERMAN_LIMIJIAOYIN_AUTH_CLIENT_ID}
             clientSecret: ${DOBERMAN_LIMIJIAOYIN_AUTH_CLIENT_SECRET}
-        hostname: doberman-mobile.hk.jiaoyin.cm
+        hostname: doberman-mobile.limijiaoyin.com
 
 
 huskyMobile:
