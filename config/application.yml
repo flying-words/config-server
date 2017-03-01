@@ -111,6 +111,10 @@ accounts:
         password: A41D3667-B377-40FE-B8CF-9D552E2BFD6C
         database: accounts
 
+heartbeat:
+    sentry:
+        dsn: http://562f7f52c3e4498f8683ecc9206354b6:491849405bf14189bde40d9d834bde49@sentry.limijiaoyin.com/33
+
 samoyed:
     trello:
         disabled: false
