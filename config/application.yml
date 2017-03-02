@@ -70,6 +70,14 @@ husky:
             clientSecret: ${DOBERMAN_LIMIJIAOYIN_AUTH_CLIENT_SECRET}
         hostname: doberman-mobile.limijiaoyin.com
 
+huskyData:
+    mongodb: # 还没有上线第一版，配置先空着
+        host: ""
+        port: ""
+        username: ""
+        password: ""
+        database: ""
+
 
 huskyMobile:
     auth:
