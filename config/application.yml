@@ -72,11 +72,11 @@ husky:
 
 huskyData:
     mongodb: # 还没有上线第一版，配置先空着
-        host: ""
-        port: ""
+        host: 119.28.11.37
+        port: 21729
         username: ""
         password: ""
-        database: ""
+        database: huskyData
 
 
 huskyMobile:
