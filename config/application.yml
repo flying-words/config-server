@@ -25,12 +25,12 @@ xero:
     secret: ${COMMON_XERO_SECRET}
 secret: ${COMMON_SECRET}
 wechat:
-    tokenService: wechat-token-service.slide.cm
+    tokenService: wechat-token-service.limijiaoyin.com
 timezone: Asia/Shanghai
 
 pigleaderboard:
     channel: '#general'
-    boards: 'yOCWnVsn,PFvzorYj,ouTSW6bf,GAnfcNYs,4UkDF9pn,98lO0FiB,Js4fIul5'
+    boards: 'yOCWnVsn,PFvzorYj,ouTSW6bf,GAnfcNYs,98lO0FiB,Js4fIul5'
     standup: '5035'
     sentry:
         dsn: "http://18b52a1a1f0d4d3ea921fd5fbe8b0df2:bfe971b0d6ed4b87b958a7579e06341d@sentry.limijiaoyin.com/23"
@@ -55,6 +55,8 @@ husky:
     mongodb:
         host: 119.28.11.37
         port: 21823
+        username: husky
+        password: FAAC5CA6-75A8-4D56-B05F-F13EF39427B2
         database: husky
     google:
         dealFolderId: 0B63u_FwVZEHoOHdpY3dfNks0bVk
@@ -62,6 +64,21 @@ husky:
     template:
         workload: 1TUxIrOdPQ3cFLnxNN53yLjmJKvrImDnlr9CJ-r9kN7w
         timesheet: 1a1xSB7ryPrqsq3-qaauyEddzqCLuHeFDeX0j95K1Fmc
+    partners:
+        guruBoard: 1d25ed78-84a7-4ea9-941e-b5cd73979b31
+        auth:
+            clientId: ${DOBERMAN_LIMIJIAOYIN_AUTH_CLIENT_ID}
+            clientSecret: ${DOBERMAN_LIMIJIAOYIN_AUTH_CLIENT_SECRET}
+        hostname: doberman-mobile.limijiaoyin.com
+
+huskyData:
+    mongodb: # 还没有上线第一版，配置先空着
+        host: 119.28.11.37
+        port: 21729
+        username: ""
+        password: ""
+        database: huskyData
+
 
 huskyMobile:
     auth:
@@ -80,31 +97,14 @@ samoyedNps:
         dsn: http://3f37e915c6ee457da99061f8d04ac3bd:6effab1c3a5a4cffa22713e80752cc4c@sentry.limijiaoyin.com/27
 
 doberman:
-    guruBoard: 1d25ed78-84a7-4ea9-941e-b5cd73979b31
-    hostname: doberman-mobile.hk.jiaoyin.cm
     sentry:
         dsn: http://aaed2570008541ad9fcd09007285c192:0ddd8a87dcda452c983bd2606f1f1770@sentry.limijiaoyin.com/11
-    trello:
-        disabled: false
-        freelancerBoard: JaUJzxLw
-    auth:
-        clientID: ${DOBERMAN_LIMIJIAOYIN_AUTH_CLIENT_ID}
-        clientSecret: ${DOBERMAN_LIMIJIAOYIN_AUTH_CLIENT_SECRET}
-    cache:
-        host: 10.144.97.139
-        port: 20197
-    mongodb:
-        host: 10.144.97.139
-        port: 38819
-        database: doberman
-        username: ${DOBERMAN_DATABASE_USERNAME}
-        password: ${DOBERMAN_DATABASE_PASSWORD}
 
 dealer:
   slack:
     hook_url: https://hooks.slack.com/services/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
     channel: '#general'
-  boards: yOCWnVsn,PFvzorYj,ouTSW6bf,GAnfcNYs,4UkDF9pn
+  boards: yOCWnVsn,PFvzorYj,ouTSW6bf,GAnfcNYs,4UkDF9pn,Js4fIul5
   mongodb:
         host: 10.144.97.139
         port: 28037
@@ -116,7 +116,13 @@ accounts:
     mongodb:
         host: 10.144.97.139
         port: 28199
+        username: accounts
+        password: A41D3667-B377-40FE-B8CF-9D552E2BFD6C
         database: accounts
+
+heartbeat:
+    sentry:
+        dsn: http://562f7f52c3e4498f8683ecc9206354b6:491849405bf14189bde40d9d834bde49@sentry.limijiaoyin.com/33
 
 samoyed:
     trello:
@@ -128,6 +134,8 @@ samoyed:
     mongodb:
         host: 119.28.11.37
         port: 28200
+        username: samoyed
+        password: C4F57CFD-A9D1-4F25-B66D-133E0B6CA3C2
         database: samoyed
 
 resumeMotherFuckerWebService:
@@ -147,7 +155,7 @@ timesheetRecorder:
         database: timesheetRecorder
 
 dealerboardBackend:
-    hostname: dealer-board.slide.cm
+    hostname: dealer-board.limijiaoyin.com
     slack:
         clientId: '3025362346.124318311617'
         clientSecret: 0a26dfecc8358a09c7235e9a832d77e6
