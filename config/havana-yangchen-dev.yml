@@ -1,0 +1,11 @@
+havana:
+    mongodb:
+        host: 127.0.0.1
+        port: 27017
+        database: havana
+    auth:
+        clientId: S4JxzIZFAaPrdmVH4exTur3roDWQDeTZEgQyTRFo
+        clientSecret: uAcXtAIinqFQFuO65HUUMtV4EZKebpvh5DwEeTmcBgwepsuI41dhcz3hNgCjvhqktk1mIeGNqD9ZtQHfVQqmW6LTeIAY8SztKKvcuCGmzVPMkr30LdkcoPMPJZ8BHi5Z
+    mobile:
+        hostname: havana.io
+
