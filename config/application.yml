@@ -159,3 +159,17 @@ dealerboardBackend:
     slack:
         clientId: '3025362346.124318311617'
         clientSecret: 0a26dfecc8358a09c7235e9a832d77e6
+
+havana:
+    mongodb:
+        host: 10.144.97.139
+        port: 34290
+        database: havana
+        username: havana
+        password: 21F95426-436E-455A-BB0B-36FF76C093BA
+    auth:
+        clientId: S4JxzIZFAaPrdmVH4exTur3roDWQDeTZEgQyTRFo
+        clientSecret: uAcXtAIinqFQFuO65HUUMtV4EZKebpvh5DwEeTmcBgwepsuI41dhcz3hNgCjvhqktk1mIeGNqD9ZtQHfVQqmW6LTeIAY8SztKKvcuCGmzVPMkr30LdkcoPMPJZ8BHi5Z
+    mobile:
+        hostname: havana.limijiaoyin.com
+
