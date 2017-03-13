@@ -167,6 +167,8 @@ havana:
         database: havana
         username: havana
         password: 21F95426-436E-455A-BB0B-36FF76C093BA
+    sentry:
+        dsn: http://111013e3dd934b76a7821c317304d0f9:16d143d1ab1a407ca2346a1001044adc@sentry.limijiaoyin.com/34
     auth:
         clientId: S4JxzIZFAaPrdmVH4exTur3roDWQDeTZEgQyTRFo
         clientSecret: uAcXtAIinqFQFuO65HUUMtV4EZKebpvh5DwEeTmcBgwepsuI41dhcz3hNgCjvhqktk1mIeGNqD9ZtQHfVQqmW6LTeIAY8SztKKvcuCGmzVPMkr30LdkcoPMPJZ8BHi5Z
