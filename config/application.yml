@@ -92,7 +92,7 @@ samoyedNps:
     auth:
         clientId: z2etM6LZqCeqsZkd9gMqbs5J9IMqQce13Z7E2srN
         clientSecret: GSNyuiZ8foJiJ753AJVNz1m7xp9MtHHdcpoWo2CDVQPBkSr23XSQNcrNJs4HAchCMpyO7fBEV39PjGvPPi3B6Wjux7rnHm6r4ujuM46siHSLPnWsFm22c9Pn9n1knoaM
-    hostname: samoyed-nps.hk.jiaoyin.cm
+    hostname: samoyed-nps.limijiaoyin.com
     sentry:
         dsn: http://3f37e915c6ee457da99061f8d04ac3bd:6effab1c3a5a4cffa22713e80752cc4c@sentry.limijiaoyin.com/27
 
