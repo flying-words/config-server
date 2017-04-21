@@ -2,6 +2,7 @@ var fs = require('fs');
 var path = require('path');
 var express = require('express');
 var cors = require('cors');
+var hash = require('object-hash');
 var generateConfig = require('./generateConfig');
 
 function validateToken(req, res, next) {
@@ -27,7 +28,11 @@ module.exports.createApp = function () {
         validateToken,
         (req, res) => {
             generateConfig('application', req.params.env).then(config => {
-                res.json(config);
+                var revision = hash(config);
+                res.json({
+                    revision,
+                    config
+                });
             }).catch(e => {
                 console.error(e);
                 var errorMsg = e.code === 'ENOENT' ? 'file not found' : 'internal server error';

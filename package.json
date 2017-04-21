@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "./scripts/validateConfig && node_modules/.bin/istanbul cover _mocha -- -R spec && node_modules/.bin/istanbul check-coverage"
+    "test": "./scripts/validateConfig && istanbul cover _mocha -- -R spec && istanbul check-coverage",
+	"start": "node server.js"
   },
   "author": "yangchen@limijiaoyin.com",
   "dependencies": {
@@ -15,6 +16,7 @@
     "express": "^4.14.0",
     "js-yaml": "^3.6.1",
     "mockery": "^2.0.0",
+    "object-hash": "^1.1.8",
     "supertest": "^2.0.1",
     "traverse": "^0.6.6"
   },

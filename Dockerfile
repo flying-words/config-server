@@ -1,4 +1,4 @@
-FROM daocloud.io/limijiaoyin_dev/node-yarn:6.9
+FROM node:7
 
 WORKDIR /src
 COPY ./package.json /src/package.json
@@ -8,5 +8,5 @@ COPY . /src
 RUN yarn test
 
 EXPOSE 9000
-CMD node server.js
+CMD yarn start
 

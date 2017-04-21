@@ -1,4 +1,5 @@
 var mockery = require("mockery");
+var hash = require('object-hash');
 var assert = require("assert");
 var request = require('supertest');
 var mergeConfig = require('../mergeConfig');
@@ -36,7 +37,9 @@ describe('app', () => {
             .set('X-CLIENT-TOKEN', process.env.CLIENT_TOKEN)
             .expect(200)
             .expect(res => {
-                assert.deepStrictEqual(res.body, mergeConfig(fsMock.mockDefaultConfig, fsMock.mockTestConfig));
+                var result = res.body;
+                assert.equal(result.revision, hash(result.config));
+                assert.deepStrictEqual(result.config, mergeConfig(fsMock.mockDefaultConfig, fsMock.mockTestConfig));
             })
             .end(done);
     });
@@ -49,7 +52,9 @@ describe('app', () => {
             .set('X-CLIENT-TOKEN', process.env.CLIENT_TOKEN)
             .expect(200)
             .expect(res => {
-                assert.deepStrictEqual(res.body, fsMock.mockDefaultConfig);
+                var result = res.body;
+                assert.equal(result.revision, hash(result.config));
+                assert.deepStrictEqual(result.config, fsMock.mockDefaultConfig);
             })
             .end(done);
     });
