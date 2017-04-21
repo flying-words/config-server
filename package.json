@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "./scripts/validateConfig && istanbul cover _mocha -- -R spec && istanbul check-coverage",
-	"start": "node server.js"
+    "start": "node server.js"
   },
   "author": "yangchen@limijiaoyin.com",
   "dependencies": {
