@@ -10,6 +10,12 @@ slack:
     clientId: "3025362346.125689131236"
     clientSecret: 9617156153ee3c5db3b7e7ae139575f7
 
+backend:
+    host: up.limibot.io
+
+event-broker:
+    host: event-broker.limibot.io
+
 mongodb:
     host: 172.22.160.203
     port: 28743

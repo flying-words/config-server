@@ -3,6 +3,12 @@ slack:
   clientId: '3025362346.173210807556'
   clientSecret: cd51d296d6d92b48be64457f43670ea5
 
+backend:
+  host: up.io
+
+event-broker:
+  host: event-broker.up.io
+
 mongodb:
     host: 192.168.210.128
     port: 27017
