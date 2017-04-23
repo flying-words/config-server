@@ -1,3 +1,17 @@
-foobar:
-    bar:
-        hello: world
+redirectURI: http://limibot.io/redirect
+privateApiKey: 30E0C6E9-0258-4164-9FF6-072C7DEC5939
+secret: 9481A1FD-D62D-40F6-B3D6-D827D6087669
+
+sentry:
+    dsn: https://44976ab00f45418f8f9406d23e88cbfc:70350aa013b54b8fb54ffc77210652cd@sentry.io/160544
+
+slack:
+    clientId: 3025362346.125689131236
+    clientSecret: 9617156153ee3c5db3b7e7ae139575f7
+
+mongodb:
+    host: 172.22.160.203
+    port: 28743
+    username: up
+    password: 841DC122-5DC6-4B2C-8BF1-DFEAA0384B37
+    database: up
