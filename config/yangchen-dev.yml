@@ -5,7 +5,7 @@ slack:
 
 backend:
   host: up.io
-  listeners:
+  webhooks:
     - http://event-broker.up.io/api/v1/hook
 
 event-broker:
