@@ -1,3 +1,4 @@
+redirectURI: http://up.io/redirect
 slack:
   clientId: '3025362346.173210807556'
   clientSecret: cd51d296d6d92b48be64457f43670ea5
