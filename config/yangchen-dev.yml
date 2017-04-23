@@ -1,0 +1,8 @@
+slack:
+  clientId:
+  clientSecret:
+
+mongodb:
+    host: nerd.io
+    port: 27017
+    username: up
