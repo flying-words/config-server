@@ -9,7 +9,7 @@ slack:
 backend:
   host: up.io
   webhooks:
-    - http://event-broker.up.io/api/v1/hook
+    event-broker: http://event-broker.up.io/api/v1/hook
 
 event-broker:
   host: event-broker.up.io
