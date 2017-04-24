@@ -1,0 +1,26 @@
+redirectURI: http://dev.limibot.io/redirect
+sentry:
+  dsn: ""
+
+slack:
+  clientId: '3025362346.173210807556'
+  clientSecret: cd51d296d6d92b48be64457f43670ea5
+
+backend:
+  host: up.io
+  webhooks:
+    event-broker: http://event-broker.dev.limibot.io/api/v1/hook
+
+event-broker:
+  host: event-broker.dev.limibot
+
+mongodb:
+  host: 172.22.160.203
+  port: 29341
+  database: up
+  username: ""
+  passwrod: ""
+
+redis:
+  host: 172.22.160.203
+  port: 47319
