@@ -24,3 +24,7 @@ mongodb:
     username: up
     password: 841DC122-5DC6-4B2C-8BF1-DFEAA0384B37
     database: up
+
+redis:
+    host: 172.22.160.203
+    port: 47379
