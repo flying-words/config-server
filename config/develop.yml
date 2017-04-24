@@ -7,12 +7,12 @@ slack:
   clientSecret: cd51d296d6d92b48be64457f43670ea5
 
 backend:
-  host: up.io
+  host: dev.limibot.io
   webhooks:
     event-broker: http://event-broker.dev.limibot.io/api/v1/hook
 
 event-broker:
-  host: event-broker.dev.limibot
+  host: event-broker.dev.limibot.io
 
 mongodb:
   host: 172.22.160.203
