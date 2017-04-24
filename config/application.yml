@@ -27,4 +27,4 @@ mongodb:
 
 redis:
     host: 172.22.160.203
-    port: 47379
+    port: 46379
