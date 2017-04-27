@@ -28,3 +28,4 @@ mongodb:
 redis:
     host: 172.22.160.203
     port: 46379
+    db: 0
