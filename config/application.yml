@@ -1,5 +1,5 @@
 env: production
-redirectURI: http://limibot.io/redirect
+redirectURI: https://limibot.io/redirect
 privateApiKey: 30E0C6E9-0258-4164-9FF6-072C7DEC5939
 secret: 9481A1FD-D62D-40F6-B3D6-D827D6087669
 
