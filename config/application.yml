@@ -13,7 +13,7 @@ slack:
 backend:
     host: up.limibot.io
     webhooks:
-        event-broker: http://event-broker.limibot.io/api/v1/hook
+        event-broker: https://event-broker.limibot.io/api/v1/hook
 
 event-broker:
     host: event-broker.limibot.io
