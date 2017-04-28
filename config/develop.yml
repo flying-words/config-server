@@ -1,4 +1,4 @@
-redirectURI: http://dev.limibot.io/redirect
+redirectURI: https://dev.limibot.io/redirect
 sentry:
   dsn: ""
 
@@ -9,7 +9,7 @@ slack:
 backend:
   host: up.dev.limibot.io
   webhooks:
-    event-broker: http://event-broker.dev.limibot.io/api/v1/hook
+    event-broker: https://event-broker.dev.limibot.io/api/v1/hook
 
 event-broker:
   host: event-broker.dev.limibot.io
