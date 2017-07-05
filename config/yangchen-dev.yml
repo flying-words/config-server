@@ -15,12 +15,12 @@ event-broker:
   host: event-broker.up.io
 
 mongodb:
-    host: 192.168.210.128
+    host: 192.168.26.243
     port: 27017
     database: up
     username: ""
     passwrod: ""
 
 redis:
-  host: 192.168.210.128
+  host: 192.168.26.243
   port: 6379
