@@ -1,4 +1,4 @@
-redirectURI: http://limibot.jarvys.pro/redirect
+redirectURI: http://limibot.hk.limijiaoyin.io/redirect
 sentry:
   dsn: ""
 
@@ -9,21 +9,21 @@ slack:
 backend:
   host: up.io
   webhooks:
-      event-broker: 'http://limibot-event-broker.jarvys.pro/api/v1/hook'
+      event-broker: 'http://limibot-event-broker.hk.limijiaoyin.io/api/v1/hook'
   stripe:
     apiKey: sk_test_jD7uAOHePZpjKyVimquYz8tF
 
 event-broker:
-    host: 'http://limibot-event-broker.jarvys.pro'
+    host: 'http://limibot-event-broker.hk.limijiaoyin.io'
 
 mongodb:
-    host: 47.74.2.4
-    port: 27017
+    host: 119.28.11.37
+    port: 48171
     database: up
     username: ""
     passwrod: ""
 
 redis:
-  host: 47.74.2.4
-  port: 6379
+  host: 119.28.11.37
+  port: 12321
 
