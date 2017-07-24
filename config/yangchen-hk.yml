@@ -1,4 +1,4 @@
-redirectURI: http://limibot-website.hk.limijiaoyin.io/redirect
+redirectURI: https://limibot-website.hk.limijiaoyin.io/redirect
 sentry:
   dsn: ""
 
