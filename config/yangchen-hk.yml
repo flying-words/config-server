@@ -5,6 +5,7 @@ sentry:
 slack:
   clientId: '3025362346.210254285328'
   clientSecret: de9d99bcd4f9fd78aa46427a3c9de742
+  verificationToken: yGV3eQfzbddpbIZQbuRnWbmX
 
 backend:
   host: up.io
