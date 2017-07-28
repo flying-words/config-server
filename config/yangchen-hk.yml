@@ -13,6 +13,7 @@ backend:
       event-broker: 'http://limibot-event-broker.hk.limijiaoyin.io/api/v1/hook'
   stripe:
     apiKey: sk_test_jD7uAOHePZpjKyVimquYz8tF
+    endpointSecret: whsec_UxdrCgwnsP3TGfZeXtf5wyTWTWrbztBb
 
 event-broker:
     host: 'http://limibot-event-broker.hk.limijiaoyin.io'
